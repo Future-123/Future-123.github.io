@@ -9,13 +9,14 @@
     <meta name="keywords" content="Future's Blog">
   
   <meta name="description" content="hexo + github 搭建个人博客 node环境配置linux操作系统1.浏览器打开https://nodejs.org,下载10.14.2版本的压缩包2.默认下载到/root/下载 路径下,解压:1tar -xf node-v10.14.2-linux-x64.tar 3.创建node和npm的软连接(能够全局使用node/npm命令)  ln -s /root/下载/node-v10.1">
+<meta name="keywords" content="hexo,github,域名">
 <meta property="og:type" content="article">
 <meta property="og:title" content="笔记">
 <meta property="og:url" content="http://localhost:4000/2018/12/24/笔记/index.html">
 <meta property="og:site_name" content="Future的博客">
 <meta property="og:description" content="hexo + github 搭建个人博客 node环境配置linux操作系统1.浏览器打开https://nodejs.org,下载10.14.2版本的压缩包2.默认下载到/root/下载 路径下,解压:1tar -xf node-v10.14.2-linux-x64.tar 3.创建node和npm的软连接(能够全局使用node/npm命令)  ln -s /root/下载/node-v10.1">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-26T06:22:27.573Z">
+<meta property="og:updated_time" content="2018-12-26T07:54:29.991Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="笔记">
 <meta name="twitter:description" content="hexo + github 搭建个人博客 node环境配置linux操作系统1.浏览器打开https://nodejs.org,下载10.14.2版本的压缩包2.默认下载到/root/下载 路径下,解压:1tar -xf node-v10.14.2-linux-x64.tar 3.创建node和npm的软连接(能够全局使用node/npm命令)  ln -s /root/下载/node-v10.1">
@@ -97,7 +98,7 @@
                         <a title="Github" target="_blank" href="//github.com/Future-123">
                             <i class="fa fa-github fa-2x"></i></a>
                     
-                        <a title="Weibo" target="_blank" href="//weibo.com/洋仔532">
+                        <a title="Weibo" target="_blank" href="//weibo.com/ly532">
                             <i class="fa fa-weibo fa-2x"></i></a>
                     
                 </div>
@@ -117,6 +118,15 @@
     </h1>
     <div class="post-title-bar">
       <ul>
+          
+              <li>
+                  <i class="fa fa-book"></i>
+                  
+                      <a href="/categories/笔记/">笔记</a>
+                  
+                      <a href="/categories/教程/">教程</a>
+                  
+              </li>
           
         <li>
           <i class="fa fa-calendar"></i>  2018-12-24
@@ -152,11 +162,38 @@
 <li>上传<br>hexo d</li>
 </ol>
 <h2 id="清理缓存"><a href="#清理缓存" class="headerlink" title="清理缓存"></a>清理缓存</h2><p>hexo clean</p>
+<h1 id="域名绑定"><a href="#域名绑定" class="headerlink" title="域名绑定"></a>域名绑定</h1><h2 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h2><table>
+<thead>
+<tr>
+<th>记录类型</th>
+<th>主机记录</th>
+<th>记录值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CNAME</td>
+<td>WWW</td>
+<td>用户名.github.io</td>
+</tr>
+<tr>
+<td>A</td>
+<td>@</td>
+<td>192.30.252.153</td>
+</tr>
+<tr>
+<td>A</td>
+<td>@</td>
+<td>192.30.252.154</td>
+</tr>
+</tbody>
+</table>
+<h2 id="创建CNAME"><a href="#创建CNAME" class="headerlink" title="创建CNAME"></a>创建CNAME</h2><p>在blog/source路径下新建一个叫CNAME的文件(不带后缀)<br>在文件内填写自己的域名,如:future-123.top</p>
 <h1 id="回家之后"><a href="#回家之后" class="headerlink" title="回家之后"></a>回家之后</h1><p>1.安装node<br>2.安装hexo脚手架<br>3.安装git<br>  打开 <a href="http://git-scm.com下载git安装包并安装" target="_blank" rel="noopener">http://git-scm.com下载git安装包并安装</a><br>4.初始化项目<br>  在桌面空白区区域鼠标右键选择”git bash here”<br>  git init blog<br>5.进入blog<br>  cd blog<br>6.安装依赖<br>  npm install<br>7.启动服务<br>  hexo s<br>8.浏览<br>  localhost:4000<br>9.切换主题<br>  在blog所在路径:</p>
 
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2018年12月26日 14:22</p>
+        <p>最后更新： 2018年12月26日 15:54</p>
         <p>原始链接： <a class="post-url" href="/2018/12/24/笔记/" title="笔记">http://localhost:4000/2018/12/24/笔记/</a></p>
         <footer>
             <a href="http://localhost:4000">
@@ -214,7 +251,7 @@
     <div class="post-share-list" id="share-list">
         <ul class="share-icons">
           <li>
-            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://localhost:4000/2018/12/24/笔记/&title=《笔记》 — Future的博客&pic=http://localhost:4000images/logo.png" data-title="微博">
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://localhost:4000/2018/12/24/笔记/&title=《笔记》 — Future的博客&pic=/images/linux.jpg" data-title="微博">
               <i class="fa fa-weibo"></i>
             </a>
           </li>
@@ -258,6 +295,17 @@
         <ul class="article-footer-menu">
             
             
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/hexo/" class="color5">hexo</a>
+      
+    <a href="/tags/github/" class="color2">github</a>
+      
+    <a href="/tags/域名/" class="color3">域名</a>
+      
+  </li>
+
         </ul>
         
     </footer>
@@ -267,7 +315,7 @@
 
     <aside class="post-toc-pos post-toc-top" id="post-toc">
         <nav class="post-toc-wrap">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#node环境配置"><span class="post-toc-text">node环境配置</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#linux操作系统"><span class="post-toc-text">linux操作系统</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#windows环境下"><span class="post-toc-text">windows环境下:</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#项目搭建"><span class="post-toc-text">项目搭建</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#初始化博客项目"><span class="post-toc-text">初始化博客项目</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#进入blog目录"><span class="post-toc-text">进入blog目录</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装项目依赖包"><span class="post-toc-text">安装项目依赖包</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#启动项目服务"><span class="post-toc-text">启动项目服务</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#浏览项目"><span class="post-toc-text">浏览项目</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#编译代码"><span class="post-toc-text">编译代码</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#推送"><span class="post-toc-text">推送</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#清理缓存"><span class="post-toc-text">清理缓存</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#回家之后"><span class="post-toc-text">回家之后</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#node环境配置"><span class="post-toc-text">node环境配置</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#linux操作系统"><span class="post-toc-text">linux操作系统</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#windows环境下"><span class="post-toc-text">windows环境下:</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#项目搭建"><span class="post-toc-text">项目搭建</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#初始化博客项目"><span class="post-toc-text">初始化博客项目</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#进入blog目录"><span class="post-toc-text">进入blog目录</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装项目依赖包"><span class="post-toc-text">安装项目依赖包</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#启动项目服务"><span class="post-toc-text">启动项目服务</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#浏览项目"><span class="post-toc-text">浏览项目</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#编译代码"><span class="post-toc-text">编译代码</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#推送"><span class="post-toc-text">推送</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#清理缓存"><span class="post-toc-text">清理缓存</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#域名绑定"><span class="post-toc-text">域名绑定</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#域名解析"><span class="post-toc-text">域名解析</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#创建CNAME"><span class="post-toc-text">创建CNAME</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#回家之后"><span class="post-toc-text">回家之后</span></a></li></ol>
         </nav>
     </aside>
     
@@ -374,10 +422,10 @@
 <div class="sidebar-menu-box" id="sidebar-menu-box">
     <div class="sidebar-menu-box-container">
         <div id="sidebar-menu-box-categories">
-            
+            <a class="category-link" href="/categories/笔记/">笔记</a><a class="category-link" href="/categories/笔记/教程/">教程</a>
         </div>
         <div id="sidebar-menu-box-tags">
-            
+            <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/域名/" style="font-size: 10px;">域名</a>
         </div>
     </div>
     <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
@@ -410,7 +458,7 @@
     <div class="mobile-header-tag-container">
         <span class="title">Tags</span>
         <div id="mobile-header-container-tags">
-            
+            <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/域名/" style="font-size: 10px;">域名</a>
         </div>
     </div>
 </div>
