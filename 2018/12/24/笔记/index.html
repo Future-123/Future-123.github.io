@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Future的博客">
 <meta property="og:description" content="hexo + github 搭建个人博客 node环境配置linux操作系统1.浏览器打开https://nodejs.org,下载10.14.2版本的压缩包2.默认下载到/root/下载 路径下,解压:1tar -xf node-v10.14.2-linux-x64.tar 3.创建node和npm的软连接(能够全局使用node/npm命令)  ln -s /root/下载/node-v10.1">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-25T09:02:58.144Z">
+<meta property="og:updated_time" content="2018-12-26T06:22:27.573Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="笔记">
 <meta name="twitter:description" content="hexo + github 搭建个人博客 node环境配置linux操作系统1.浏览器打开https://nodejs.org,下载10.14.2版本的压缩包2.默认下载到/root/下载 路径下,解压:1tar -xf node-v10.14.2-linux-x64.tar 3.创建node和npm的软连接(能够全局使用node/npm命令)  ln -s /root/下载/node-v10.1">
@@ -140,12 +140,12 @@
 <p>3.创建node和npm的软连接(能够全局使用node/npm命令)<br>  ln -s /root/下载/node-v10.14.2-linux-x64/bin/node  /sbin/node<br>  ln -s /root/下载/node-v10.14.2-linux-x64/bin/npm  /sbin/npm<br>4.通过npm包装管理器全局安装hexo脚手架(框架)<br>  npm install hexo-cli -g<br>5.创建hexo的软连接</p>
 <h2 id="windows环境下"><a href="#windows环境下" class="headerlink" title="windows环境下:"></a>windows环境下:</h2><p>1.浏览器打开<a href="https://nodejs.org,下载10.14.2版本的安装包" target="_blank" rel="noopener">https://nodejs.org,下载10.14.2版本的安装包</a><br>2.双击步骤1得到安装包,下一步下一步安装,默认配置<br>3.使用npm全局安装hexo<br>  win+r输入cmd回车,输入以下命令:<br>  npm install hexo-cli -g</p>
 <h1 id="项目搭建"><a href="#项目搭建" class="headerlink" title="项目搭建"></a>项目搭建</h1><h2 id="初始化博客项目"><a href="#初始化博客项目" class="headerlink" title="初始化博客项目"></a>初始化博客项目</h2><p>终端切换到桌面,然后:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure></p>
-<p>into:初始化<br>blog:项目名称<br>该命令执行完毕以后会在桌面生成一个blog文件夹</p>
+<p>init:初始化<br>blog:项目名称<br>该命令执行完毕以后会在桌面生成一个blog文件夹</p>
 <h2 id="进入blog目录"><a href="#进入blog目录" class="headerlink" title="进入blog目录"></a>进入blog目录</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> blog</span><br></pre></td></tr></table></figure>
 <h2 id="安装项目依赖包"><a href="#安装项目依赖包" class="headerlink" title="安装项目依赖包"></a>安装项目依赖包</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
 <h2 id="启动项目服务"><a href="#启动项目服务" class="headerlink" title="启动项目服务"></a>启动项目服务</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 <p> git pull 将本地与服务器同步(更新本地-拉)<br> git push 将服务器与本地同步(更新服务器-推)</p>
-<h2 id="浏览项目"><a href="#浏览项目" class="headerlink" title="浏览项目"></a>浏览项目</h2><p>在浏览器地址栏输入: <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 回车访问</p>
+<h2 id="浏览项目"><a href="#浏览项目" class="headerlink" title="浏览项目"></a>浏览项目</h2><p>在浏览器地址栏输入: <a href="http://localhost:4000">http://localhost:4000</a> 回车访问</p>
 <h2 id="编译代码"><a href="#编译代码" class="headerlink" title="编译代码"></a>编译代码</h2><p>通过hexo框架将md格式的文档转换为html+css+js<br>hexo g</p>
 <h2 id="推送"><a href="#推送" class="headerlink" title="推送"></a>推送</h2><ol>
 <li>安装deploy依赖包<br>npm install hexo-deployer-git –save</li>
@@ -156,7 +156,7 @@
 
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2018年12月25日 17:02</p>
+        <p>最后更新： 2018年12月26日 14:22</p>
         <p>原始链接： <a class="post-url" href="/2018/12/24/笔记/" title="笔记">http://localhost:4000/2018/12/24/笔记/</a></p>
         <footer>
             <a href="http://localhost:4000">
